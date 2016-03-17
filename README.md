@@ -1,9 +1,7 @@
-# dev-build-release
+# static-code-analysis
 
-> Small script to append the build number to the version number
+> Script to analyze the eslint/code coverage/lines of code and upload to firebase (dashboard repo coming later)
 
 ## Usage
 
-You must use `dev-build-release` in a folder with a `package.json` and a remote to push to.
-
-`dev-build-release -b BUILD_NUMBER`
+TODO
