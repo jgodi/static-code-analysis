@@ -1,0 +1,34 @@
+{
+  "name": "static-code-analysis",
+  "version": "0.0.1",
+  "description": "Analyzes the ESLINT/Code Coverage/Lines of Code and uploads results to Firebase",
+  "main": "index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "sca": "./bin/analyze-code"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgodi/static-code-analysis.git"
+  },
+  "keywords": [
+    "static",
+    "code",
+    "analysis",
+    "firebase"
+  ],
+  "author": "Joshua Godi <joshuagodi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgodi/static-code-analysis/issues"
+  },
+  "homepage": "https://github.com/jgodi/static-code-analysis#readme",
+  "dependencies": {
+    "deep-diff": "^0.3.3",
+    "https": "^1.0.0",
+    "sloc": "^0.1.10"
+  }
+}
