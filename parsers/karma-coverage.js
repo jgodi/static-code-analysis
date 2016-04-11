@@ -15,8 +15,7 @@ function getProperty(index) {
         case '5':
             return 'uncovered';
         default:
-            console.error('INDEX', index);
-            throw new Error('NOOO');
+            console.error('Invalid Index', index);
     }
 }
 
@@ -68,4 +67,4 @@ module.exports = function (fileLocation) {
             files: files
         }
     }
-}
+};

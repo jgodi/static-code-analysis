@@ -16,4 +16,4 @@ module.exports = function (fileLocation) {
         dashboard: formattedLocJson,
         report: formattedLocJson
     };
-}
+};

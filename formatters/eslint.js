@@ -13,7 +13,6 @@ function stripPath(filePath) {
 }
 
 module.exports = function (results) {
-
     var results = results || [];
     // accumulate the errors and warnings
     var summary = results.reduce(function (seq, current) {
@@ -29,7 +28,7 @@ module.exports = function (results) {
         }
 
         return seq;
-    }, {errors: 0, warnings: 0, files: []});
+    }, { errors: 0, warnings: 0, files: [] });
 
     return JSON.stringify({
         errors: summary.errors,

@@ -4,8 +4,8 @@ module.exports = function (fileLocation) {
     return {
         dashboard: {
             warnings: eslintJson.warnings,
-            errors: eslintJson.errors,
+            errors: eslintJson.errors
         },
         report: eslintJson
     }
-}
+};
