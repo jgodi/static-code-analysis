@@ -1,6 +1,6 @@
 {
   "name": "static-code-analysis",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Analyzes the ESLINT/Code Coverage/Lines of Code and uploads results to Firebase",
   "main": "index.js",
   "preferGlobal": true,
@@ -29,6 +29,8 @@
   "dependencies": {
     "deep-diff": "^0.3.3",
     "https": "^1.0.0",
-    "sloc": "^0.1.10"
+    "lcov-parse": "0.0.10",
+    "sloc": "^0.1.10",
+    "yargs": "^4.3.2"
   }
 }
