@@ -1,6 +1,6 @@
 {
   "name": "static-code-analysis",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Analyzes the ESLINT/Code Coverage/Lines of Code and uploads results to Firebase",
   "main": "index.js",
   "preferGlobal": true,
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/jgodi/static-code-analysis#readme",
   "dependencies": {
-    "request": "^2.72.0"
+    "request": "^2.72.0",
+    "simple-git": "^1.38.0"
   }
 }
