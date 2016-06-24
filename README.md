@@ -4,7 +4,7 @@
 
 ## Installation
 
-`npm install --save-dev static-code-analysis`
+`npm install --save-dev static-code-analysis sloc`
 
 You can also install the `sloc` module as well, in order to get number of lines of code reported.
 
@@ -38,11 +38,22 @@ This will make sure to run the eslint and sloc before calling the `sca` module, 
 
 ## Configuring the Build
 
-For the build you will require to pass the FIREBASE instance into the run command of `sca`. For example,
+You will want to configure your jenkins build to first `Inject environment variables to the build process`
 
-`npm run sca MY-FIREBASE-INSTANCE.firebaseio.com`
+```
+# SECTION: Properties Content 
+# GALAXY VARIABLES
+GALAXY_FIREBASE=#YOUR_FIREBASE_URL#
+SLACK_WEBHOOK=#YOUR_SLACK_WEBHOOK#
+SLACK_CHANNEL=#YOUR_CHANNEL#
+```
 
-That is it!!
+and then you can call the `sca` tool via an `execute shell` build step
+
+```
+# Static Code Analysis
+npm run sca ${GALAXY_FIREBASE} ${SLACK_WEBHOOK} ${SLACK_CHANNEL}
+```
 
 ## Creating a New Parser
 
