@@ -31,6 +31,7 @@
     "simple-git": "^1.38.0"
   },
   "devDependencies": {
-    "easy-table": "^1.0.0"
+    "easy-table": "^1.0.0",
+    "jsonfile": "^2.3.1"
   }
 }
