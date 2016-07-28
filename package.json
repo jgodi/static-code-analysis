@@ -1,6 +1,6 @@
 {
   "name": "static-code-analysis",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Analyzes the ESLINT/Code Coverage/Lines of Code and uploads results to Firebase",
   "main": "index.js",
   "preferGlobal": true,
